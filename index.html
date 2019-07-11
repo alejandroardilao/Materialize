@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!--Importar la fuente de los íconos de Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar la hojas de estilos de materialize css-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Contenedores y Sistema de Rejilla</title>
+  </head>
+  <body>
+    <!--Crea una fila principal que contendrá todos los elementos de la página principal.-->
+    <div class="row">
+      <!--Crea el encabezado de la página con un ancho de la totalidad de la pantalla en todos los dispositivos. Asígnale el color de fondo que desees mediante las clases de Materialize CSS. Adicionalmente asígnale una clase a este contenedor y en la hoja de estilos propia del proyecto define una altura mínima de 4 rem.-->
+      <div class="s12 col amber darken-3 barra-superior">
+        <h5>Barra de encabezado y búsqueda</h5>
+      </div>
+      <!--Crea la columna para los grupos en la parte izquierda de la página, asígnale un color de fondo usando las clases de Materialize CSS. Esta sección debe ocupar 2 columnas en todos los dispositivos, debe tener una altura mínima de 50 rem y un borde de algún color y 1 píxel de ancho.-->
+
+      <!--Añade las clases necesarias para que en smartphones, la columna de grupos se ubique en el costado derecho de la página y la columna principal al lado izquierdo.-->
+      <div class="s2 m2 l2 col blue-grey lighten-5 columna-grupos push-s10">
+        <span>Columna para los grupos</span>
+      </div>
+      <!--Crea la columna principal en el centro de la pantalla, que ocupe 10 columnas en smartphones y 7 en demás plataformas, asígnale un color de fondo mediante las clases de Materialize CSS, una altura mínima de 50 rem y un borde de algún color y 1 píxel de ancho.-->
+      <div class="s10 m7 l7 col white columna-principal pull-s2">
+        <!--Al interior de la columna principal crea una fila con dos columnas: la columna de publicaciones con un ancho de 8 columnas en computadores de escritorio y de la totalidad del contenedor en los demás. La segunda es la columna de noticias que debe tener 3 columnas de ancho, un offset de una columna y se debe mostrar sólo para computadores de escritorio, es decir, con la clase “hide-on-med-and-down”. Ambas deben tener un color de fondo mediante clases, altura mínima de 50 rem y un borde de algún color y 1 píxel de ancho.-->
+        <div class="row">
+          <div class="s12 m12 l8 col white columna-publicaciones">
+            <h5>Columna para las publicaciones</h5>
+          </div>
+          <div class="l3 offset-l1 col white columna-news hide-on-med-and-down">
+            <h5>Columna para las noticias</h5>
+          </div>
+        </div>
+      </div>
+      <!--Crea la columna de chat que irá en la parte derecha de la pantalla. Debe ocupar 3 columnas en todos los dispositivos y ocultarse en smartphones con la clase “hide-on-small-only”. Asígnale un color de fondo mediante clases de Materialize CSS, altura mínima de 50 rem y un borde de algún color y 1 píxel de ancho.-->
+      <div class="m3 l3 col white columna-chat hide-on-small-only">
+        <div class="row">
+          <!--En la columna de chat, debes crear dos bloques, el primero será el bloque de actividades recientes y el segundo el bloque de chat. Ambos deben tener una altura de 25 rem, un color de fondo diferente mediante clases de Materialize CSS y deben ubicarse uno debajo del otro.-->
+          <div class="s12 col blue-grey bloque-feed">
+            <h5>Bloque para las actividades recientes</h5>
+          </div>
+          <div class="s12 col grey lighten-1 bloque-chat">
+            <h5>Bloque para el chat</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
